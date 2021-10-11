@@ -5,6 +5,7 @@ module.exports = {
   purge: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/data/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -14,6 +15,7 @@ module.exports = {
       },
     },
     colors: {
+      white: "hsl(0, 100%, 100%)",
       blue: "hsl(246, 80%, 60%)",
       work: "hsl(15, 100%, 70%)",
       play: "hsl(195, 74%, 62%)",
@@ -29,7 +31,15 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      height: {
+        80: "20rem",
+        84: "21rem",
+        88: "22rem",
+        92: "23rem",
+        96: "24rem",
+      },
+    },
   },
   plugins: [],
 };
