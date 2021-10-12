@@ -1,5 +1,6 @@
 import "../styles/global.css";
 import Head from "next/head";
+import { AppContextProvider } from "../context/AppContext";
 
 const Application = ({ Component, pageProps }) => {
   return (
@@ -11,7 +12,9 @@ const Application = ({ Component, pageProps }) => {
           href={`${process.env.NEXT_PUBLIC_PREFIX}/favicon-32x32.png`}
         />
       </Head>
-      <Component {...pageProps} />
+      <AppContextProvider>
+        <Component {...pageProps} />
+      </AppContextProvider>
     </>
   );
 };

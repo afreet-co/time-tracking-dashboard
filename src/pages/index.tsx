@@ -4,8 +4,8 @@ import { timeData } from "../data";
 
 const Index = () => {
   return (
-    <div className="flex items-center justify-center h-screen w-screen bg-v-dark-blue">
-      <div className="m-auto grid grid-cols-4 gap-6">
+    <div className="flex sm:items-center sm:justify-center sm:h-screen w-screen bg-v-dark-blue">
+      <div className="sm:m-auto grid grid-cols-1 sm:grid-cols-4 gap-6 w-full sm:w-auto p-6 my-20 sm:my-0">
         <ProfileCard />
         {timeData.map((td) => (
           <TimeCard key={td.title} {...td} />
