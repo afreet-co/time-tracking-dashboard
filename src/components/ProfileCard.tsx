@@ -9,7 +9,7 @@ export const ProfileCard: FC = () => {
     >
       <div className="sm:h-60 w-full rounded-2xl bg-blue flex flex-row sm:flex-col justify-start items-center sm:items-start space-x-4 sm:space-x-0 sm:space-y-8 p-8 sm:p-4">
         <img
-          src="/profile-pic.png"
+          src={`${process.env.NEXT_PUBLIC_PREFIX}/profile-pic.png`}
           alt="Jeremy Robson"
           className="w-16 h-16 border-2 border-solid border-white rounded-full"
         />
